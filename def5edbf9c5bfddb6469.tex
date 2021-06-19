@@ -1,0 +1,191 @@
+% Sun Yihan's Academic Curriculum Vitae Latex Template
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2007-2014 Todd C. Miller <Todd.Miller@sudo.ws> http://www.sudo.ws/todd
+% (c) 2021 Z.C. TIAN <ztian002@e.ntu.edu.sg> https://github.com/doem97
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[a4paper,11pt]{article}
+
+%-----------------------------------------------------------
+% Include packages
+\usepackage[empty]{fullpage}
+\usepackage[UTF8]{ctex}
+\usepackage{color}
+\usepackage{verbatimbox}
+\usepackage{hyperref}
+\definecolor{mygrey}{gray}{0.85}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0mm}
+% \renewcommand{\arraystretch}{1.1}
+\pagestyle{plain}
+
+% Adjust margins to 12.5mm on all sides
+\addtolength{\oddsidemargin}{-12mm}
+\addtolength{\evensidemargin}{-12mm}
+\addtolength{\textwidth}{25mm}
+\addtolength{\topmargin}{-12mm}
+\addtolength{\textheight}{25mm}
+
+%-----------------------------------------------------------
+% Custom commands
+% \renewcommand{\labelitemii}{$\bullet$} % Change the style of symbol in front of the item
+% \renewcommand{\labelitemiii}{$-$}
+\newcommand{\lsitem}[1]{\item #1 \vspace{-4pt}}
+\newcommand{\resheading}[1]{{ \vspace{2pt} \pdfbookmark{#1}{#1}
+\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}} \end{minipage}}
+}}
+
+\newcommand{\resschoolheading}[5]{
+\addvbuffer[2pt 2pt]{
+\begin{tabular*}{184mm}{l@{\extracolsep{\fill}}r}
+        % \bf \textsl{#1} & #2 \\
+        \textbf{#1} & \textbf{#2} \\
+		\textbf{#3} & \textbf{#4} \\
+		\textit{#5}
+\end{tabular*}}
+} % 教育经历的5个控制模块: {学校}{地点}{学院及成绩}{就读时间}{主修课程}
+\newcommand{\resschoolheadingtwo}[4]{
+\addvbuffer[2pt 2pt]{
+\begin{tabular*}{184mm}{l@{\extracolsep{\fill}}r}
+        % \bf \textsl{#1} & #2 \\
+        \textbf{#1} & \textbf{#2} \\
+		\textbf{#3} & \textbf{#4} \\
+\end{tabular*}}
+} % 教育经历的4个控制模块: {学校}{地点}{学院及成绩}{就读时间}
+
+
+\newcommand{\resfourheading}[2]{
+\addvbuffer[0pt 0pt]{
+\begin{tabular*}{184mm}{l@{\extracolsep{\fill}}r}
+        % \bf \textsl{#1} & #2 \\
+        \textbf{#1} & \text{#2} \\
+\end{tabular*}}
+} % 实习经历的4个控制模块: {项目名称}{时间}
+
+\newcommand{\resfiveheading}[4]{
+\addvbuffer[0pt 0pt]{
+\begin{tabular*}{184mm}{l@{\extracolsep{\fill}}r}
+        % \bf \textsl{#1} & #2 \\
+        \textbf{#1} & \text{#3} \\
+		\textbf{#4} & \text{#2}
+\end{tabular*}}
+} % 实习经历的4个控制模块: {公司}{地点}{时间}{职位}
+
+\newcommand{\resaward}[2]{
+\addvbuffer[1pt 1pt]{
+\begin{tabular*}{184mm}{l@{\extracolsep{\fill}}r}
+        {#1} & \textit{#2}\\
+\end{tabular*}}
+} % 获奖模块：{获奖或证书}{时间}
+%-----------------------------------------------------------
+
+
+\begin{document}
+% \addvbuffer[0pt 3pt]
+{
+\def\arraystretch{1.5}
+\begin{tabular*}{185mm}{l@{\extracolsep{\fill}}r}
+        \textbf{\LARGE 孙怡晗}  & 联系方式+65-8900-8490\\
+          出生日期05-08-1998 &  邮箱：SUNY0045@e.ntu.edu.sg\\
+        \ 民族：汉族 & 学历：硕士研究生\\
+\end{tabular*}
+}
+\vspace{0.25mm}
+
+%%%% 教育经历
+\resheading{教育经历}
+\resschoolheading{新加坡南洋理工(NTU)}{新加坡}{电子与电气学院通信工程专业(GPA: 4.0/5.0)}{2021.1-2022.1}{主修课程：机器学习，无线通信，光纤通信，分布式多媒体，射频信号}
+\resschoolheading{四川大学(SCU)}{四川省成都市}{电子信息学院电子工程专业(GPA: 3.3/4.0)}{2016.9-2020.6}{主修课程：数字电路，模拟电路，数字信号处理，信号与系统，电磁场与微波}
+\resschoolheadingtwo{新加坡国立大学(NUS)夏校访学}{新加坡}{计算机工程(GPA:A(excellent))}
+{2019.6-2020.8}
+\resschoolheading{台湾国立金门大学(NQU)}{台湾省}{电子工程学院电子工程系(GPA:4.88/5)}
+{2019.1-2019.6}{主修课程：机器人入门，积体电路的绘制，智慧型计算，IOS程序设计}
+
+%%%% 获奖及证书
+\resheading{获奖及证书}
+\resaward{全球大学生数学建模大赛全球二等奖}{2019}
+\resaward{全国大学生创新创业优秀项目奖}{2018}
+\resaward{模拟联合国优秀国家代表}{2017}
+\resaward{中国红十字会优秀志愿者}{2017}
+\resaward{校级单项奖学金}{2019}
+\resaward{雅思IELTS学术类(A类)6.5}{2020}
+\resaward{CET4及CET6证书}{2016/2018}
+
+
+%%%% 实习经历
+\resheading{实习经历}
+
+\resfiveheading{Ultra-Wireless Pte Ltd}{新加坡}{2021.6-至今}{硬件算法实习生(RTLS\&UWB定位)}
+\begin{itemize}
+    \item 对RTLS定位模块的算法进行改进，利用IEEE802.15标准和串口协议解析脚本，提高定位精度
+    \begin{itemize}
+        \item 测试现有定位模块，进行数据解析，偏差补偿，漂移量控制
+        \textit{: 测试不同高度，环境的RTLS定位模块，编写脚本解析log得到数据偏移量及标准差并进行矫正，提高测距准确度，利用双向飞行距离算法定位target模块，选用了集中度大于90\%的数据分析减少无关项的干扰提高分析效率。}
+        \item 利用Verilog编写makefile文件实现模块，协助进行雷达定位的测试与串口文件分析。
+        \end{itemize}
+\end{itemize}
+
+\resfiveheading{FroForest.Pte.Ltd}{北京}{2020.8-2021.1}{NLP实习生(OCR方向)}
+\newpage
+\begin{itemize}
+    \item 基于NLP及分词技术的OCR算法改进
+    \begin{itemize}
+        \item 测试开源OCR在识别化学检验文档时准确度，\textit{:调用百度OCR开源api对公司实验文档进行初步识别，统计并分析错误概率较高的字符或数据类型出现的概率及原因。}
+        \item 利用NLP和分词技术修正OCR识别结果\textit{:利用NLP和分词训练语料库，减少词组中错误概率；映射替换字符提高易错字及化学符号的识别率，修正算法后将识别率由75\%提升至89\%.}
+    \end{itemize}
+\end{itemize}
+
+
+\resfiveheading{清华大学物理实验室\&普测时空}{北京}{2019.12-2020.4}{电子硬件实习生}
+\begin{itemize}
+    \item 利用FPGA及Xilinx电路板对锁相环进行测试验证，设计PCB电路板实现十倍频率电路。\vspace{-0.2cm}
+    \begin{itemize}
+        \item 利用Verilog编写testbench进行电路验证\textit{:编写teshbench产生激励，观测不同边界条件下的输出及相移产生原因。测试由于温漂及电路频率较高时产生的偏差和损耗。}
+        \item 制作十倍频PCB电路\textit{:利用5倍频和2倍频元件实现高频电路的设计，利用多层结构电路板及布线方式减少电磁信号的干扰并完成打板。}
+    \end{itemize}
+\end{itemize}
+
+\resfiveheading{长虹电器股份有限公司}{四川}{2019.8-2019.12}{实习软件工程师}
+\begin{itemize}
+    \item 通过python解析MySQL日志，上传至Hive及Hadoop管理。\vspace{-0.2cm}
+    \begin{itemize}
+        \item 配置、获取并解析MySQL Binlog文档并在Hive及Hadoop数据仓库进行管理\textit{：编写python脚本获取部门数据库Binlog文档并解析为可读模式，写入HDFS后导入Hive，在Hadoop进行数据管理和编辑。}
+    \end{itemize}
+\end{itemize}
+
+%%%% 校内项目经历
+\resheading{校内项目经历}
+\resfourheading{智能健康水杯底座设计与开发}{2016.12-2018.4}
+\begin{itemize}
+    \lsitem{利用压力传感器记录饮水量，通过蓝牙传输到手机端，在APP显示并提示用户是否到达每日饮水量}
+    \vspace{-0.2cm}
+    \begin{itemize}
+        \item 负责蓝牙模块的选型及测试以及水杯底座电路板的制作\textit{：由压力传感器得到数据，利用CC254系列蓝牙配置寄存器并接收串口数据，通过中断回调函数记录总量。}
+        \item 制作PCB电路板\textit{：电路仿真实现功能后，根据电路图进行PCB布线及制作，完成电路打板。}
+    \end{itemize}
+\end{itemize}
+
+\resfourheading{图像识别及垃圾分类APP开发}{2019.7~2019.8}
+\begin{itemize}
+    \lsitem{利用IBMcloud，Node.js编写分类器，在数据库进行模糊查询得到主体内容信息\textit{：爬取不同垃圾图片，调用IBMcloud已有API训练模型。在测试集返回图片主体内容关键字，在数据库进行模糊查询返回垃圾类别及降解时间信息。}}
+\end{itemize}
+
+%%%% 社会实践及活动
+\resheading{社会实践及活动}
+\begin{itemize}
+% \setlength{\itemsep}{-0.2cm}
+    \item 体育舞蹈协会外联部干事:2016年12月作为主持人参与干训会并主持舞蹈晚会。
+    \item 电子信息学院团委创就部干事:2016年12月参与并组织学院迎新晚会。
+    \item 2016年-2017年参与中国红十字会“爱心包裹”募捐并获得“优秀志愿者”称号
+\end{itemize}
+
+%%%% SKILLS
+\resheading{自我评价}
+\begin{itemize}
+    \item 本人善于学习，有较好抗压能力和创新能力；乐于沟通学习。
+\end{itemize}
+
+\end{document}
